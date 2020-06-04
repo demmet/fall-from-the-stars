@@ -1,0 +1,24 @@
+{
+  "name": "fall-from-the-stars",
+  "version": "1.0.0",
+  "description": "App developed during Next Level Week (01/06/20)",
+  "main": "nodemon src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demmet/fall-from-the-stars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demmet/fall-from-the-stars/issues"
+  },
+  "homepage": "https://github.com/demmet/fall-from-the-stars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
