@@ -2,8 +2,9 @@
   align-items: center;
   background-color: #0E0A14ef;
   display: flex;
-  justify-content: center;
   height: 100vh;
+  justify-content: center;
+  left: 0;
   position: fixed;
   top: 0;
   transition: 400ms;
@@ -73,4 +74,15 @@
 
 #modal form button:hover {
   background-color: #2fb85e;
+}
+
+#modal.point .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal.point h1 {
+  color: white;
+  margin-top: 32px;
 }

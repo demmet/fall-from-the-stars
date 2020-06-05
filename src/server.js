@@ -17,7 +17,11 @@ server.get("/", (req, res) => {
   return res.render("index.html")
 })
 
-server.post("/create-point", (req, res) => {
+server.get("/create-point", (req, res) => {
+  return res.render("create-point.html")
+})
+
+server.post("/savepoint", (req, res) => {
   const query = `
     INSERT INTO places (
       name,
@@ -52,7 +56,13 @@ server.post("/create-point", (req, res) => {
 })
 
 server.get("/search", (req, res) => {
-  db.all(`SELECT * FROM places`, function(err, rows) {
+  const search = req.query.search
+
+  if(search == "") {
+    return res.render("search-results.html", { total: 0 })
+  }
+
+  db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err, rows) {
     if(err) {
       return console.log(err)
     }

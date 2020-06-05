@@ -1,11 +1,16 @@
+body {
+  background-color: white;
+}
+
 body::after {
-  background: white;
+  background: #f0f0f5;
   content: '';
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  height: 18rem;
   left: 0;
   right: 0;
-  top: 290px;
+  top: 0;
   z-index: -1;
 }
 
