@@ -74,4 +74,4 @@ server.get("/search", (req, res) => {
 })
 
 
-server.listen(3002)
+server.listen(process.env.PORT || 3002)
